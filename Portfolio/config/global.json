@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.5.0"
+  },
+  "applications": {
+    "_default": {
+      "link": "myportfolio"
+    },
+    "myportfolio": {
+      "applicationId": "IDfYzMTWAIAzc5jmwiDJf9bNxrvxE7QZQjYC6Wdl",
+      "masterKey": "wL7bIWxjrzLiFesxyKjEtZpUEaz2Ih42vTKcnYUo"
+    }
+  }
+}

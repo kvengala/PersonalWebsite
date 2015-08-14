@@ -9,32 +9,79 @@ and open the template in the editor.
         <title>Personalwebsite</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="//www.parsecdn.com/js/parse-1.5.0.min.js">
-            
         </script>
-        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab" rel='stylesheet'  type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel='stylesheet'  type='text/css'>
        <script src="js/index.js"></script>
 
     </head>
     <body>
-        <div class="row" >
-     <ul class="index">
-     <li><a href="projects.html" class="round green">Login<span class="round">That is, if you already have an account.</span></a></li>
-     <li><a href="experience.html" class="round red">Sign Up<span class="round">But only if you really, really want to. </span></a></li>
-     <li><a href="#" class="round yellow">Demo<span class="round">Take a look. This product is totally rad!</span></a></li>
-    </ul> 
-      <div class="col-sm-4" style="display: inline;  left: 750px; bottom: 300px; color: white;">
+        
+        <div class="container"  >
+            <div class="well-small" style="width: 100%; height: 50px; padding-left: 200px; padding-top: 30px; "  > <p class="sans-serif" style="font-size: xx-large; color: whitesmoke;"> Kashyap Vengalathur Srikanth</p></div>
+            
+            <div class="pull-right well-lg" style="display: inline; width: 400px;top: 100px; padding-right: 50px;color: black; background-color: gainsboro;">
           <h3><b>Welcome!!!</b></h3>        
-      <p class="sans-serif"> <h2> You have reached Kashyap's Website </h2></p>
-     <div class="chat-messages"  style="  left: 750px; color: white;" >
-         <input type ="text" style =" width: 300px; height: 200px; color: black;" placeholder="Send a message !! mention Your email address"/>
-       <input type="submit"  class="btn btn-default" value="Submit Button" value="Submit" >             
-      </div>
+        
+            <p class="sans-serif" style="font-size: small"> I am a graduate student at Illinois Institute of technology at Chicago. I specialize in Distributed and Cloud Computing. My research focuses on distributed storage systems  
+            </p>
+           <p class="sans-serif" style="font-size: small"> A passionate Software developer with experience in varied software development technologies   </p>
+           <p class="sans-serif" style="font-size: small"> <i> Interested to know more.....</i><br> Click on the circle to the left </p>
+           <p class="sans-serif" style="font-size: small"> <i> Wanna Connect...</i><br> Just say a Hi in the text box below with your email</p> 
+       
+     <div class="input-group">
+  
+   <input type ="text" class="form-control"  name ="message" style =" width: 300px; height: 75px; color: black;" placeholder="Say Hi.. Don't forget your email"><br>
+         <input type="submit"  class="btn btn-default" value="Send" onclick="return senddetail()" >             
+      
+  <span class="input-group-btn">
+    <!--button class="btn btn-default" type="button">Go!</button-->
+  </span>
+  
+</div>      
+        
     </div>
+             <div id="card1" class = "wrapper" style="width: 250px; height: 200px; position: relative; padding-top: 50px;" > 
+                 
+  <div class="fron1" style="width: inherit;  text-align:  left; padding-left: 15px; color: black; height:100px; inherit;border-radius: 25px; padding-bottom:  100px; padding-left: 100px;"> 
+      <ul class="index" style="padding-left: 100px;">
+     <li><a href="aboutme.html" class="round green sans-serif" style="font-size: xx-large">A<span class="round">Click to know more about me</span></a></li>
+    </ul>
+      
+  </div> 
+    
+</div>
+             <div id="card2" class = "wrapper" style="width: 250px; height: 200px; bottom:  200px; left: 300px; position: relative; padding-top: 50px;" > 
+  <div class="fron1" style="width: inherit;  text-align:  left; padding-left: 15px; color: black; height:100px inherit;border-radius: 25px; padding-top: 0px; padding-left: 100px;"> 
+      <ul class="index" style="padding-left: 100px;">
+          <li><a href="projects.html" class="round green sans-serif" style="font-size: xx-large">P<span class="round">Click to see my projects</span></a></li>
+    </ul>
+      
+  </div> 
+             </div>   
+               <div id="card3" class = "wrapper" style="width: 250px; height: 200px; bottom: 200px; position: relative;" > 
+  <div class="fron1" style="width: inherit;  text-align:  left; padding-left: 15px; color: black; height:100px inherit;border-radius: 25px; padding-top: 0px; padding-left: 100px;"> 
+      <ul class="index" style="padding-left: 100px;">
+     <li><a href="experience.html" class="round green sans-serif" style="font-size: xx-large">W<span class="round">Click to see my work experience</span></a></li>
+    </ul>
+      
+  </div> 
+             </div>   
+             <div id="card4" class = "wrapper" style="width: 250px; height: 200px; left :300px; bottom: 400px; position: relative;" > 
+  <div class="fron1" style="width: inherit;  text-align:  left; padding-left: 15px; color: black; height:100px inherit;border-radius: 25px; padding-top: 0px; padding-left: 100px;"> 
+      <ul class="index" style="padding-left: 100px;">
+     <li><a href="blogs.html" class="round green sans-serif" style="font-size: xx-large">B<span class="round"> My Blogs</span></a> </li>
+    </ul>
+      
+  </div> 
+             </div>   
+    
+      
    </div>
         
   </body>
