@@ -1,5 +1,25 @@
 
 
+Parse.initialize("IDfYzMTWAIAzc5jmwiDJf9bNxrvxE7QZQjYC6Wdl", "qKGjumiYetRA8NjfyujrlIQMgjlL8cd3TEGOvJkh");
+
+function senddetail (){
+    var UserObject = Parse.Object.extend("User_information");
+    var text = document.getElementsByName("message")[0].value;
+    //alert(text);
+    if(text === "")
+    {
+        alert("Enter the text");
+        return false;
+    }
+    else{
+  var userObject = new UserObject();
+  userObject.save({Message: text}).then(function(object) {
+  alert(" Message has been sent");
+  document.getElementsByName("message")[0].value ="";
+});
+  return true;
+    }
+};
 
     /**************************************
     *   On Screen animations
@@ -115,7 +135,7 @@
     * Populating Modal Window Info for Projects
     **************************************/
 
-    $("#igloo-project").click(function (e) {
+    document.getElementById("igloo-project").click(function () {
         $("#myModalLabel").html("Igloo");
         $("#modal-body").html("At&T proprietary GIS web application available only for AT&T employees within their intranet. " +
         "This project primarily facilitates AT&T employees to make feasibility checks during their product installation based on their customers' " +
@@ -196,12 +216,15 @@
     //</script>
 
     /***********************************
-    * Angular JS Starts here
+    * Angular JS Starts 
+    * 
+    * here
     ************************************/
 
     /*Module: skillPopulator*/
     (function(){
         var skillPopulator = angular.module('skillPopulator', []);
+        alert(skillPopulator);
         skillPopulator.controller('skillsetController', function(){
             /*$("#language-domain").mouseenter(function(){
                 skillPopulator.skillType = language;
@@ -212,7 +235,7 @@
         var def = {
             /*name:'language'*/
             set: '--Hover over a technology--'
-        }
+        };
         var language = {
             /*name:'language'*/
             set: 'Java, Javascript, HTML5, CSS3'
