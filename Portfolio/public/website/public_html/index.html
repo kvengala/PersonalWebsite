@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prasanna RB - A Java, Web and Android developer">
+    <meta name="author" content="Prasanna R Balasubramani">
+    <meta property="og:image" content="http://www.prasannarb.com/img/prasanna1_tech.jpg" />
+    <meta name="keywords" content="prasanna, prasanna r balasubramani, portfolio, java, javascript, developer, android, webapp, software developer, java developer,
+    techie, webapp developer, android developer">
+    <link rel="image_src" type="image/jpeg" href="http://www.prasannarb.com/img/prasanna1_tech.jpg" />
+
+    <title>Prasanna R B</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!--Custom - Created by Prasanna CSS-->
+    <link href="css/custom.css" rel="stylesheet">
+
+   
+</head>
+
+<body>
+
+<!-- Side Menu -->
+<a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand"><a href="#">Welcome!</a>
+        </li>
+        <li><a href="#top">Home</a>
+        </li>
+        <li><a href="#about">About Me</a>
+        </li>
+        <li><a href="#work-experience">Work Experience</a>
+        </li>
+        <li><a href="#skill-set">Skill Set</a>
+        </li>
+        <li><a href="#portfolio">Projects</a>
+        </li>
+        <li><a href="#contact">Contact</a>
+        </li>
+    </ul>
+</div>
+<!-- /Side Menu -->
+
+<!-- Full Page Image Header Area -->
+<!--<div id="top" class="header">
+    <div class="img-responsive">
+        <div class="col-md-4 bg-font translucent-div">
+            <h1>Prasanna R B</h1>
+            <h3> A <em>Web</em> and <em>Android</em> Developer</h3>
+            <a href="#about" class="btn btn-primary btn-lg">Find Out More</a>
+        </div>
+    </div>
+</div>-->
+
+<div id="top" class="header">
+    <div class="vert-text bg-font"><div class="translucent-div">
+        <h1>Prasanna R B</h1>
+        <h2> A <em>Java</em> Developer</h2>
+        <a href="#about" id="find-out-more" class="btn btn-primary btn-lg">Find Out More</a></div>
+    </div>
+</div>
+<!-- /Full Page Image Header Area -->
+
+
+<!-- Intro -->
+<div id="about" class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2>Who am I?</h2>
+
+                <p class="lead">I am a Computer Science Graduate Student at Illinois Institute of Technology, Chicago.
+                    I am also a web and android developer with a keen interest for cutting-edge technology.
+                    I have a previous work experience of 2.5 years.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Intro -->
+
+<!-- Services -->
+<div id="work-experience" class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <h2>Work Experience</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-3 text-center">
+                <div class="service-item">
+                    <i class="service-icon fa"><img class="logo-disp" src="img/infosys_logo_edit.png"></i>
+                    <h4>Infosys Limited</h4>
+
+                    <p>Worked for 2.2 years as a Systems Engineer. Had At&t as my client for 1.8 years.
+                       I have worked in GIS projects as well as agile web development projects</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="service-item">
+                    <i class="service-icon fa"><img class="logo-disp" src="img/iit_logo_edit.png"></i>
+                    <h4>Illinois Institute of Technology</h4>
+
+                    <p>I have been working part-time as a Graduate Assistant (Business Rule Engine programmer)
+                        at my University since May, 2014.</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="service-item">
+                    <i class="service-icon fa fa-android"></i>
+                    <h4>Personal Projects</h4>
+                    <p>I develop web and android projects out of my personal interest with a focus on scalable designs and
+                       robust models.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Services -->
+
+<!-- Callout - SkillSet -->
+<div id="skill-set" class="callout">
+    <div class="container" ng-app="skillPopulator">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <h2 class="skill-font">Skill Set</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row col-md-12 text-center" ng-controller="skillsetController as skill">
+            <div class="row">
+                <i id="language-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'Java, Javascript, HTML5, CSS3, SQL'"><span style="color: #ffffff">Language</span></i>
+                <i id="framework-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'AngularJS, Node.js, jQuery, Roboguice, Spring, Struts2'">Frameworks</i>
+                <i id="cloud-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'AWS, Google-Appengine, Google Analytics'">Cloud</i>
+                <i id="build-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'Maven'">Build</i>
+                <i id="vcs-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'Git (bitbucket), SVN'">VCS/DVCS</i>
+                <i id="ide-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'Idea, Eclipse'">IDE</i>
+            </div>
+            <div class="row">
+                <i id="os-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'Linux, Android, Windows, Unix'">OS</i>
+                <i id="bigdata-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'Hadoop, YARN, MapReduce'">Big Data</i>
+                <i id="patterns-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'Facade, Singleton, MVC, Adapter, Strategy'">Patterns</i>
+                <i id="gis-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'ArcGis, GoogleAPI'">GIS Api</i>
+                <i id="persistence-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'JPA, iBatis'">Persistence</i>
+                <i id="sdlc-domain" class="skill-icon fa" ng-mouseover="skill.skillType.set = 'Agile, Waterfall, Prototype'">SDLC</i>
+            </div>
+            <div id="skill-expansion" class="row">
+                <!--<p>{{skill.skillType.name}}</p>-->
+                <p>{{skill.skillType.set}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Callout -->
+
+<!-- Portfolio -->
+<div id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <h2>Projects</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div id="igloo-project" class="portfolio-item">
+                    <a class="btn"  data-toggle="modal" data-target="#project-modal">
+                        <img class="img-portfolio project-img-responsive"  src="img/map_image.jpg">
+                    </a>
+                    <h4>Igloo</h4>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div id="triage-tool-project" class="portfolio-item" data-toggle="modal" data-target="#project-modal">
+                    <a>
+                        <img class="btn img-portfolio project-img-responsive" src="img/map_image.jpg">
+                    </a>
+                    <h4>Triage Tool</h4>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div id="tqt-project" class="portfolio-item" data-toggle="modal" data-target="#project-modal">
+                    <a>
+                        <img class="btn img-portfolio project-img-responsive" src="img/att_290x290.png">
+                    </a>
+                    <h4>TQT</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div id="transiit-project" class="portfolio-item" data-toggle="modal" data-target="#project-modal">
+                    <a>
+                        <img class="btn img-portfolio project-img-responsive" src="img/transiit_500X350.png">
+                    </a>
+                    <h4>TransIIT</h4>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div id="transit-bentley-project" class="portfolio-item" data-toggle="modal" data-target="#project-modal">
+                    <a>
+                        <img class="btn img-portfolio project-img-responsive" src="img/transit_bentley_500X350.png">
+                    </a>
+                    <h4>Transit Bentley</h4>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div id="research-project" class="portfolio-item" data-toggle="modal" data-target="#project-modal">
+                    <a>
+                        <img class="btn img-portfolio project-img-responsive" src="img/hadoop_research.png">
+                    </a>
+                    <h4>Research</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Portfolio -->
+
+<!-- Call to Action -->
+<div id="contact" class="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h3>Contact</h3>
+                <ul class="list-inline">
+                    <li><a href="https://www.facebook.com/prasanna.balasubramani" class="contact-icon-color" target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/prasannarb05" class="contact-icon-color" target="_blank"><i class="fa fa-twitter-square fa-5x"></i></a>
+                    </li>
+                    <li><a href="https://in.linkedin.com/pub/prasanna-balasubramani/66/257/674/" class="contact-icon-color" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
+                    </li>
+                    <li><a href="https://plus.google.com/u/0/+PrasannaRBalasubramani/about" class="contact-icon-color" target="_blank"><i class="fa fa-google-plus-square fa-5x"></i></a>
+                    </li>
+                </ul>
+                <h4>e-Mail : prasanna.raghavendar@gmail.com</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Call to Action -->
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <hr>
+                <footer><p>Developed By <b>Prasanna R Balasubramani</b></p></footer>
+
+                    <div id="cert-logo" class="col-md-offset-0 text-center">
+                        <ul class="list-inline">
+                            <li><i class="fa"><img class="img-responsive" src="img/ocjp_edit.jpg"></i>
+                            </li>
+                            <li><i class="fa"><img class="img-responsive" src="img/ms_certi_logo_edit.jpg"></i>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /Footer -->
+
+<!-- Modal -->
+<div class="modal fade" id="project-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel"><!--Content to be dynamically filled here--></h4>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!--Content to be dynamically filled here-->
+            </div>
+            <div class="modal-footer">
+                <a href="https://play.google.com/store/apps/details?id=com.ucommute.activities" target="_blank">
+                    <img id="play-img-btn" alt="Android app on Google Play"
+                         src="/img/google_play_btn.png" />
+                </a>
+                <button type="button" class="btn btn-info btn-lg" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /Modal -->
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.onscreen.min.js"></script>
+<script src="js/jquery.transit.min.js"></script>
+<script src="js/angular.min.js"></script>
+<!--&lt;!&ndash; Custom JavaScript for the Side Menu and Smooth Scrolling &ndash;&gt;-->
+<script src="js/custom.js"></script>
+<!-- /JavaScript -->
+
+</body>
+
+</html>
+
