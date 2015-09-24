@@ -32,14 +32,14 @@ i.skill-icon {
     border: 3px solid #ffffff;
     border-radius: 50%;
     display: inline-block;
-    font-size: 130%;
+    /* font-size: 130%; */
     width: 120px;
     height: 120px;
     line-height: 120px;
     vertical-align: middle;
     text-align: center;
-    background: #000000;
-    opacity: 0.8;
+    background: #0E0C0C;
+    /* opacity: 0.8; */
     margin-top: 10px;
 }
 i.skill-icon:hover {

@@ -1,26 +1,4 @@
-
-
-Parse.initialize("IDfYzMTWAIAzc5jmwiDJf9bNxrvxE7QZQjYC6Wdl", "qKGjumiYetRA8NjfyujrlIQMgjlL8cd3TEGOvJkh");
-
-function senddetail (){
-    var UserObject = Parse.Object.extend("User_information");
-    var text = document.getElementsByName("message")[0].value;
-    //alert(text);
-    if(text === "")
-    {
-        alert("Enter the text");
-        return false;
-    }
-    else{
-  var userObject = new UserObject();
-  userObject.save({Message: text}).then(function(object) {
-  alert(" Message has been sent");
-  document.getElementsByName("message")[0].value ="";
-});
-  return true;
-    }
-};
-
+    /**************************************
     /**************************************
     *   On Screen animations
     **************************************/
@@ -135,7 +113,7 @@ function senddetail (){
     * Populating Modal Window Info for Projects
     **************************************/
 
-    document.getElementById("igloo-project").click(function () {
+    $("#igloo-project").click(function (e) {
         $("#myModalLabel").html("Igloo");
         $("#modal-body").html("At&T proprietary GIS web application available only for AT&T employees within their intranet. " +
         "This project primarily facilitates AT&T employees to make feasibility checks during their product installation based on their customers' " +
@@ -216,9 +194,7 @@ function senddetail (){
     //</script>
 
     /***********************************
-    * Angular JS Starts 
-    * 
-    * here
+    * Angular JS Starts here
     ************************************/
 
     /*Module: skillPopulator*/
@@ -239,42 +215,42 @@ function senddetail (){
         var language = {
             /*name:'language'*/
             set: 'Java, Javascript, HTML5, CSS3'
-        }
+        };
         var sdlc = {
             /*name:'sdlc'*/
             set: 'Agile, Waterfall, Prototype'
-        }
+        };
         var cloud = {
             /*name:'cloud'*/
             set: 'AWS, Google-Appengine, MapReduce'
-        }
+        };
         var build = {
             /*name:'build'*/
             set: 'Maven, Gradle'
-        }
+        };
         var frameworks = {
             /*name:'frameworks'*/
             set: 'Hadoop, Roboguice, Spring, Struts2'
-        }
+        };
         var ide = {
             /*name:'ide'*/
             set: 'Idea, Eclipse'
-        }
+        };
         var os = {
             /*name:'os'*/
             set: 'Linux, Android, Windows, Unix'
-        }
+        };
         var gisApi = {
             /*name:'gisApi'*/
             set: 'ArcGis, GoogleAPI'
-        }
+        };
         var persistence = {
             /*name:'persistence'*/
             set: 'JPA, iBatis'
-        }
+        };
         var patterns = {
             /*name:'patterns'*/
             set: 'Facade, Singleton, MVC, Adapter'
-        }
+        };
     })();
     /*skillPopulator ends here*/
